@@ -5,8 +5,9 @@ public class Course {
 	String courseUniversity;	//학부 혹은 대학원 
 	int courseYear;	//해당 년도 
 	String courseTerm;	//해당 학기 
+	String courseArea;
 	String courseMajor;	//해당 학과 
-	int courseGrade;	//해당 학년 
+	String courseGrade;	//해당 학년 
 	String courseTitle;	//강의 제목 
 	int courseCredit;	//강의 학점 
 	int courseDivide;	//강의 분반 
@@ -39,16 +40,22 @@ public class Course {
 	public void setCourseTerm(String courseTerm) {
 		this.courseTerm = courseTerm;
 	}
+	public String getCourseArea() {
+		return courseArea;
+	}
+	public void setCourseArea(String courseArea) {
+		this.courseArea = courseArea;
+	}
 	public String getCourseMajor() {
 		return courseMajor;
 	}
 	public void setCourseMajor(String courseMajor) {
 		this.courseMajor = courseMajor;
 	}
-	public int getCourseGrade() {
+	public String getCourseGrade() {
 		return courseGrade;
 	}
-	public void setCourseGrade(int courseGrade) {
+	public void setCourseGrade(String courseGrade) {
 		this.courseGrade = courseGrade;
 	}
 	public String getCourseTitle() {
@@ -93,13 +100,14 @@ public class Course {
 	public void setCourseRoom(String courseRoom) {
 		this.courseRoom = courseRoom;
 	}
-	public Course(String courseUniversity, int courseYear, String courseTerm,
-			String courseMajor, int courseGrade, String courseTitle, int courseCredit, int courseDivide,
+	public Course(String courseUniversity, int courseYear, String courseTerm, String courseArea,
+			String courseMajor, String courseGrade, String courseTitle, int courseCredit, int courseDivide,
 			int coursePersonnel, String courseProfessor, String courseTime, String courseRoom) {
 		super();
 		this.courseUniversity = courseUniversity;
 		this.courseYear = courseYear;
 		this.courseTerm = courseTerm;
+		this.courseArea = courseArea;
 		this.courseMajor = courseMajor;
 		this.courseGrade = courseGrade;
 		this.courseTitle = courseTitle;
@@ -110,14 +118,15 @@ public class Course {
 		this.courseTime = courseTime;
 		this.courseRoom = courseRoom;
 	}
-	public Course(int courseID, String courseUniversity, int courseYear, String courseTerm,
-			String courseMajor, int courseGrade, String courseTitle, int courseCredit, int courseDivide,
+	public Course(int courseID, String courseUniversity, int courseYear, String courseTerm, String courseArea,
+			String courseMajor, String courseGrade, String courseTitle, int courseCredit, int courseDivide,
 			int coursePersonnel, String courseProfessor, String courseTime, String courseRoom) {
 		super();
 		this.courseID = courseID;
 		this.courseUniversity = courseUniversity;
 		this.courseYear = courseYear;
 		this.courseTerm = courseTerm;
+		this.courseArea = courseArea;
 		this.courseMajor = courseMajor;
 		this.courseGrade = courseGrade;
 		this.courseTitle = courseTitle;
